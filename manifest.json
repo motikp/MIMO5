@@ -1,0 +1,124 @@
+{
+    "$schema": "https://github.com/OfficeDev/microsoft-teams-app-schema/blob/preview/DevPreview/MicrosoftTeams.schema.json",
+    "manifestVersion": "devPreview",
+    "version": "5.0.0",
+    "showLoadingIndicator": true,
+    "isFullScreen": true,
+    "id": "",
+    "packageName": "mpiences.dev.teams.microsoft.com",
+    "developer": {
+        "name": "MPIENCES BRANDS INC",
+        "websiteUrl": "https://wadsworthearnings.net",
+        "privacyUrl": "www.teams.com/privacy",
+        "termsOfUseUrl": "www.teams.com/termsofuse",
+        "mpnId": "6368146"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "MIMO 5.0 BUSINESS CALL CENTER",
+        "full": "MIMO 5.0 BUSINESS CALL CENTER FOR MS TEAMS"
+    },
+    "description": {
+        "short": "AI/ML Automated Call Center ",
+        "full": " MIMO 5.0 is a SIP-based VoIP phone available on desktop and mobile - enabling seamless communications for all your call center needs including voice broadcasting, automated service agents, and text message broadcasting. Create campaigns & connect your business phone, second phone line or Google Voice with MS Teams and accelerate business productivity. "
+    },
+    "accentColor": "#F9F9FA",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://dev.azure.com/mpiences/MIMOBUSINESSCALLCENTER",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team",
+                "groupchat"
+            ],
+            "context": [
+                "channelTab",
+                "privateChatTab",
+                "meetingSidePanel",
+                "meetingDetailsTab",
+                "meetingChatTab"
+            ],
+            "sharePointPreviewImage": "49bcb1e4-11d1-454c-85c1-8cb81e843269",
+            "supportedSharePointHosts": [
+                "sharePointFullPage",
+                "sharePointWebPart"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "conversations",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "bots": [
+        {
+            "botId": "3b72698d-dbdc-4806-b7b4-c37f25b30ecb",
+            "scopes": [
+                "team",
+                "groupchat",
+                "personal"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "team"
+                    ],
+                    "commands": [
+                        {
+                            "title": "TYPE TO TEXT",
+                            "description": "CONVERT BOT TEXT MESSAGES TO ACTIVE CONVERSATIONS"
+                        },
+                        {
+                            "title": "ANSWER",
+                            "description": "RECEIVE PHONE CALL"
+                        },
+                        {
+                            "title": "OUTGOING",
+                            "description": "OUTGOING VOIP CALLS"
+                        },
+                        {
+                            "title": "LINK SERVICE PROVIDER",
+                            "description": "Add your business phone line"
+                        },
+                        {
+                            "title": "Authenticate",
+                            "description": "Call or Text"
+                        },
+                        {
+                            "title": "Contacts",
+                            "description": "Phonebook"
+                        },
+                        {
+                            "title": "Voice Campaigns",
+                            "description": "Broadcast messages to clients, customers, or contacts using MIMO 5.0 AIML VOIP"
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": true,
+            "isNotificationOnly": false,
+            "supportsCalling": true,
+            "supportsVideo": true
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "dev.azure.com",
+        "vz.visualstudio.com"
+    ]
+}
